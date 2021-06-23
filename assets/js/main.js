@@ -45,6 +45,11 @@ const skills = [
         "percentage": "90%"
     },
     {
+        "icon": "bxs-file-css",
+        "name": "Materialize",
+        "percentage": "90%"
+    },
+    {
         "icon": "bxl-javascript",
         "name": "JavaScript",
         "percentage": "70%"
@@ -68,6 +73,11 @@ const skills = [
         "icon": "bxl-react",
         "name": "React JS",
         "percentage": "65%"
+    },
+    {
+        "icon": "bxl-react",
+        "name": "React Native",
+        "percentage": "40%"
     },
     {
         "icon": "bxl-firebase",

@@ -8,6 +8,7 @@
 :root {
     --first-color: #4070f4;
     --second-color: #0e2431;
+    --third-color: rgba(89, 176, 235, .2);
 }
 
 :root {
@@ -88,7 +89,7 @@ img {
 .section-title::after {
     position: absolute;
     content: "";
-    width: 64px; 
+    width: 150px; 
     height: 0.18rem;
     left: 0;
     right: 0;
@@ -167,6 +168,7 @@ img {
 }
 
 .nav__logo {
+    font-size: 1.5rem;
     color: #fff;
 }
 
@@ -247,6 +249,10 @@ img {
     box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
 }
 
+.about {
+    background-color: var(--third-color);
+}
+
 .about__container, .skills__container, .work__container, .contact__container {
     row-gap: 2rem;
     text-align: center;
@@ -317,6 +323,7 @@ img {
 }
 
 .work {
+    background-color: var(--third-color);
     text-align: center;
 }
 
@@ -394,7 +401,7 @@ img {
     }
 
     .section-title::after {
-        width: 80px;
+        width: 150px;
         top: 3rem;
     }
 
