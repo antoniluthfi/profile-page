@@ -265,8 +265,18 @@ img {
     border-radius: .5rem;
 }
 
+.skills__subtitle {
+    text-align: center;
+}
+
 .skills__text {
+    text-align: center;
     margin-bottom: var(--mb-4);
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .skills__data {
@@ -276,7 +286,7 @@ img {
     position: relative;
     font-weight: var(--font-semi);
     padding: .5rem 1rem;
-    margin-bottom: var(--mb-4);
+    margin: 0 var(--mb-1) var(--mb-4) var(--mb-1);
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
 }

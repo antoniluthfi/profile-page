@@ -30,29 +30,69 @@ navLink.forEach((n) => n.addEventListener('click', linkAction));
 // skills data
 const skills = [
     {
-        "icon": "html5",
+        "icon": "bxl-html5",
         "name": "HTML5",
         "percentage": "95%"
     },
     {
-        "icon": "css3",
+        "icon": "bxl-css3",
         "name": "CSS3",
         "percentage": "80%"
     },
     {
-        "icon": "javascript",
+        "icon": "bxl-bootstrap",
+        "name": "Bootstrap",
+        "percentage": "90%"
+    },
+    {
+        "icon": "bxl-javascript",
         "name": "JavaScript",
         "percentage": "70%"
     },
     {
-        "icon": "nodejs",
+        "icon": "bxl-jquery",
+        "name": "jQuery",
+        "percentage": "70%"
+    },
+    {
+        "icon": "bxl-github",
+        "name": "Git",
+        "percentage": "90%"
+    },
+    {
+        "icon": "bxl-nodejs",
         "name": "Node JS",
         "percentage": "70%"
     },
     {
-        "icon": "react",
+        "icon": "bxl-react",
         "name": "React JS",
         "percentage": "65%"
+    },
+    {
+        "icon": "bxl-firebase",
+        "name": "Firebase",
+        "percentage": "50%"
+    },
+    {
+        "icon": "bx-code",
+        "name": "PHP",
+        "percentage": "70%"
+    },
+    {
+        "icon": "bx-code",
+        "name": "Laravel",
+        "percentage": "70%"
+    },
+    {
+        "icon": "bx-data",
+        "name": "MySql",
+        "percentage": "65%"
+    },
+    {
+        "icon": "bx-data",
+        "name": "Mongo DB",
+        "percentage": "50%"
     },
 ];
 
@@ -61,7 +101,7 @@ skills.forEach((skill) => {
     skillsHTML += `
         <div class="skills__data">
             <div class="skills__names">
-                <i class="bx bxl-${skill.icon} skills__icon"></i>
+                <i class="bx ${skill.icon} skills__icon"></i>
                 <span class="skills__name">${skill.name}</span>
             </div>
             <div>
