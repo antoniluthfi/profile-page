@@ -221,7 +221,7 @@ img {
 .home__social-icon {
     width: max-content;
     margin-bottom: var(--mb-2);
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--second-color);
 }
 
@@ -380,7 +380,7 @@ img {
 }
 
 .footer__icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     margin: 0 var(--mb-2);
 }
