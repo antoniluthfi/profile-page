@@ -194,10 +194,10 @@ sr.reveal('.contact__input',{interval: 200});
 
 
 // text typing effect 
-const TypedJsOptions = {
-    strings: ['Lintang Luthfiantoni'],
-    typeSpeed: 150,
-    loop: true
-};
+// const TypedJsOptions = {
+//     strings: ['Lintang Luthfiantoni'],
+//     typeSpeed: 150,
+//     loop: true
+// };
 
-const typed = new Typed('.home__title-color', TypedJsOptions);
+// const typed = new Typed('.home__title-color', TypedJsOptions);
