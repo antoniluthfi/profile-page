@@ -12,7 +12,7 @@ const showMenu = (toggleId, navId) => {
 
 showMenu('nav-toggle', 'nav-menu');
 
-// select menu
+// select menu on click
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
@@ -26,6 +26,29 @@ function linkAction() {
 }
 
 navLink.forEach((n) => n.addEventListener('click', linkAction));
+
+// select menu on scroll
+const sections = document.querySelectorAll('section');
+const navigations = document.querySelectorAll('#nav-menu ul li a');
+
+window.addEventListener('scroll', () => {
+    let current = 'home';
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+
+        if((pageYOffset + 100) > sectionTop) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navigations.forEach((navigation) => {
+        navigation.classList.remove('active');
+        if(navigation.dataset.section == current) {
+            navigation.classList.add('active');
+        }
+    });
+});
 
 // skills data
 const skills = [
@@ -135,6 +158,8 @@ for (let i = 1; i <= 6; i++) {
 }
 
 document.getElementById('work-content').innerHTML = workHTML;
+
+console.log(document.getElementsByClassName('home__title-color')[0].innerText);
 
 // scroll reveal animation
 const sr = ScrollReveal({
